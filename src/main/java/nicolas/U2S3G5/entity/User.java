@@ -1,6 +1,4 @@
-package nicolas.entity;
-
-
+package nicolas.U2S3G5.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.management.relation.Role;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,14 +14,14 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "Utente")
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String username;
-
+    private String email;
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER)

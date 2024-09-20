@@ -1,4 +1,4 @@
-package nicolas.entity;
+package nicolas.U2S3G5.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
